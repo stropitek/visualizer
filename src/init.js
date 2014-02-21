@@ -1,48 +1,49 @@
 requirejs.config({
-	"baseUrl": "",
-	"paths": {
-		"ace": "./components/ace/lib/ace",
-		"d3": "./components/d3/d3.min",
-		"fancytree": "./components/fancytree/src/jquery.fancytree",
-		"jqgrid": "./components/jqgrid_edit/js/jquery.jqGrid",
-		"jquery": "./components/jquery/jquery.min",
-		"jqueryui": "./components/jquery-ui/ui/minified/jquery-ui.min",
-		"ckeditor": "./components/ckeditor/ckeditor",
-		"threejs": "./components/three.js/build/three.min",
-		"forms": "./lib/forms",
-		"plot": "./lib/plot/plot",
-		'ChemDoodle': 'lib/chemdoodle/ChemDoodleWeb-unpacked',
-        "pouchdb": "./components/pouchdb/dist/pouchdb-nightly.min"
-	},
+  "baseUrl": "",
+  "paths": {
+    "ace": "./components/ace/lib/ace",
+    "d3": "./components/d3/d3.min",
+    "fancytree": "./components/fancytree/src/jquery.fancytree",
+    "jqgrid": "./components/jqgrid_edit/js/jquery.jqGrid",
+    "jquery": "./components/jquery/jquery.min",
+    "jqueryui": "./components/jquery-ui/ui/minified/jquery-ui.min",
+    "ckeditor": "./components/ckeditor/ckeditor",
+    "threejs": "./components/three.js/build/three.min",
+    "forms": "./lib/forms",
+    "plot": "./lib/plot/plot",
+    'ChemDoodle': 'lib/chemdoodle/ChemDoodleWeb-unpacked',
+    "pouchdb": "./components/pouchdb/dist/pouchdb-nightly.min"
+  },
 
-	"shim": {
-        "d3": {
-            "exports" : "d3"
-        },
-        "threejs": {
-            "exports" : "THREE"
-        },
-        "components/x2js/xml2json.min": {
-            "exports" : "X2JS"
-        },
-        "components/leaflet/leaflet" : {
-            "exports" : "L",
-            "init" : function() {
-                return this.L.noConflict();
-            }
-        },
-        "components/jit/Jit/jit" : {
-            "exports" : "$jit"
-        },
-		"ckeditor": ["./components/ckeditor/adapters/jquery"],
-		"jqgrid": ["jquery", "components/jqgrid_edit/js/i18n/grid.locale-en"],
-		"libs/jsmol/js/JSmolApplet": ["libs/jsmol/JSmol.min.nojq"],
-		"lib/flot/jquery.flot.pie": ["jquery","lib/flot/jquery.flot"],
-		"jqueryui": ["jquery"],
-		"ChemDoodle": ["lib/chemdoodle/ChemDoodleWeb-libs"],
-                "components/farbtastic/src/farbtastic" : ["components/jquery/jquery-migrate.min"],
-                "lib/pixastic/pixastic" : ["lib/pixastic/pixastic/pixastic.core"]
-	}
+  "shim": {
+    "d3": {
+      "exports" : "d3"
+    },
+    "threejs": {
+      "exports" : "THREE"
+    },
+    "components/x2js/xml2json.min": {
+      "exports" : "X2JS"
+    },
+    "components/leaflet/leaflet" : {
+      "exports" : "L",
+      "init" : function() {
+        return this.L.noConflict();
+      }
+    },
+    "components/jit/Jit/jit" : {
+      "exports" : "$jit"
+    },
+    "components/three.js/examples/js/controls/TrackballControls": ["threejs"],
+    "ckeditor": ["./components/ckeditor/adapters/jquery"],
+    "jqgrid": ["jquery", "components/jqgrid_edit/js/i18n/grid.locale-en"],
+    "libs/jsmol/js/JSmolApplet": ["libs/jsmol/JSmol.min.nojq"],
+    "lib/flot/jquery.flot.pie": ["jquery","lib/flot/jquery.flot"],
+    "jqueryui": ["jquery"],
+    "ChemDoodle": ["lib/chemdoodle/ChemDoodleWeb-libs"],
+    "components/farbtastic/src/farbtastic" : ["components/jquery/jquery-migrate.min"],
+    "lib/pixastic/pixastic" : ["lib/pixastic/pixastic/pixastic.core"]
+  }
 });
 
 

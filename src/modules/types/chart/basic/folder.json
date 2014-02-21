@@ -7,7 +7,11 @@
 		{
 			"moduleName": "Pie chart",
 			"url": "modules/types/chart/basic/pie_chart_jit/"
-		}
+		},
+    {
+      "moduleName": "Scatter 3D",
+      "url": "modules/types/chart/basic/scatter3D/"
+    }
 	],
 	"name": "Basic",
 	"folders": {}
