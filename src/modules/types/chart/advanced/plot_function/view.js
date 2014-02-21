@@ -55,7 +55,7 @@ define(['require','modules/default/defaultview','src/util/util','src/util/api','
 
 			this.onReady = $.Deferred();
 
-			require(['./TrackballControls','lib/parser/Parser'], function() {
+			require(['components/three.js/examples/js/controls/TrackballControls','lib/parser/Parser'], function() {
 				
 				self.createGraph();
 
